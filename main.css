@@ -144,7 +144,6 @@ header a {
 
 header i {
   float: right;
-  border: 1px solid green;
   padding-top: .5em;
   padding-right: 1em;
 }
@@ -178,11 +177,6 @@ header i {
 
 
 footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border: 1px solid red;
   width: 100%;
 }
 
