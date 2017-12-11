@@ -125,7 +125,7 @@ textarea {
      z-index: 100;
      height: 4.375em;
      width: 100%;
-     font-family: "azo-sans-web", sans-serif;
+     font-family: "sofia-pro", sans-serif;
      background-color: hsla(0, 0%, 100%, 0.5);
    }
 
@@ -134,7 +134,7 @@ textarea {
      padding: 0;
      text-align: center;
      font-style: normal;
-     font-weight: lighter;
+     font-weight: 500;
      font-size: 1em;
    }
 
@@ -167,14 +167,11 @@ textarea {
      padding-top: .8em;
    }
 
-   header i {
-     float: right;
-     padding-top: .8em;
-     padding-right: 1em;
-   }
-
    header .icon {
-     font-size: 25px;
+     float: right;
+     width: 21px;
+     margin-top: 1.2em;
+     margin-right: 1.8em;
    }
 
    /* end header styling */
@@ -350,11 +347,38 @@ textarea {
      overflow: hidden;
      border-bottom: 1px solid #cbc8c3;
      padding-bottom: 25px;
+     width: 100%;
    }
    .insta-thumb {
+     position: relative;
      width: 25%;
      float: left;
-     padding: 15px;
+
+   }
+
+   .insta-thumb:hover {
+     background-color: hsla(36, 11%, 92%, 0.8);
+   }
+
+   .insta-thumb img {
+     position: relative;
+     z-index: -100;
+   }
+
+   .insta-content {
+     display: none;
+   }
+
+   .insta-thumb:hover p {
+     display: block;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     width: 15em;
+     margin: 0;
+     text-align: center;
+     color: black;
    }
 
 
@@ -364,6 +388,7 @@ textarea {
    /* begin footer section */
 
    footer {
+     width: 100%;
      padding: 20px 40px;
    }
 
@@ -550,15 +575,54 @@ textarea {
     /* Style adjustments for high resolution devices */
 }
 
-@media (max-width: 50em) {
-    .column {
-        width: 50%;
+@media (max-width: 80em) {
+  .page-section {
+    margin: 1em 0em;
+  }
+
+  .thumb-section2 {
+    padding: 0px 120px;
+  }
+  .process {
+    padding: 4em 25em;
+  }
+  .process p {
+    padding: 3em 0em;
+  }
+  #quote-row {
+    width: 100%;
+  }
+  .row .quote {
+    width: 50%;
+    height: 33em;
+  }
+  .column {
+    width: 50%;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 60em) {
+    footer {
+      width: 100%;
+    }
+    .page-section {
+      margin: 1em 0em;
+    }
+    .thumb-section2 {
+      padding: 0px 80px;
+    }
+    .process {
+      padding: 4em 10em;
     }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 40em) {
     .column {
         width: 100%;
+   }
+   .process {
+     padding: 4em 5em;
    }
 }
 
